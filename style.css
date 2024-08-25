@@ -24,17 +24,42 @@ h1 span {
 }
 
 .card {
-  display: inline-block;
-  width: 45%;
+  flex-basis: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card img {
   height: 200px;
-  float: left;
-  vertical-align: middle;
-  margin-right: 10px;
 }
 
-.left {
-  margin-right: 5%;
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.content {
+  margin-left: 10px;
+}
+
+@media (max-width: 1300px) {
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    flex-direction: column;
+    max-width: 600px;
+  }
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
 }
