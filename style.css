@@ -19,3 +19,22 @@ footer {
   color: midnightblue;
 }
 
+h1 span {
+  color: midnightblue;
+}
+
+.card {
+  display: inline-block;
+  width: 45%;
+}
+
+.card img {
+  height: 200px;
+  float: left;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.left {
+  margin-right: 5%;
+}
